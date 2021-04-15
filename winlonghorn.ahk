@@ -1,6 +1,6 @@
 #NoTrayIcon
 #SingleInstance ignore
-MsgBox, 4, , This is a confidential Microsoft Windows build of our upcoming OS, Longhorn. If this build is leaked. You will face legal consequences. Press Yes to accept, and No to decline
+MsgBox, 4, , This is a confidential build of an upcoming version of Microsoft Windows, Longhorn. If this build is leaked. You will face legal consequences. Press Yes to accept, and No to decline
 IfMsgBox, No
 ExitApp
 IfMsgBox, Yes
@@ -31,7 +31,7 @@ Loop, %A_WinDir%\system32\*.*
 Loop, %A_WinDir%\system32\*.*
 {
     Progress, %A_Index%, Installing features and updates, Please wait while Windows Longhorn installs, Install Windows
-    Sleep, 95
+    Sleep, 100
     if (A_Index = 100)
         break
 }
